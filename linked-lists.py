@@ -14,4 +14,13 @@ class LinkedList:
     def __init__(self) -> None:
         self.head = None
         self.tail = None
-        
+
+    def append(self, data):
+        new_node = ListNode(data)
+        if not self.head:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            self.tail = new_node
+            
