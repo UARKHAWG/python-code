@@ -7,7 +7,7 @@ class ListNode:
         self.next = None
 
     def __str__(self) -> str:
-        return f"List Node {repr{self.data}} --> {str(self.next)}"
+        return f"List Node {repr(self.data)} --> {str(self.next)}"
 
 
 class LinkedList:
@@ -24,3 +24,13 @@ class LinkedList:
             self.tail.next = new_node
             self.tail = new_node
             
+
+if __name__ == '__main__':
+
+    a = ListNode([[11,22,33],[1,2,3]])
+    b = ListNode([4,5,6])
+    c = ListNode([7,8,9])
+
+    a.next = b
+
+    print(a)
